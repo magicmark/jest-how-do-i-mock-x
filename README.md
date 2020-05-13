@@ -23,7 +23,14 @@ $ yarn # install node_modules
 $ yarn test # runs Jest
 ```
 
-## Testing philosophy
+## Further reading / Prior art
+
+- https://jestjs.io/docs/en/mock-function-api
+- https://github.com/kentcdodds/how-jest-mocking-works
+- https://github.com/kentcdodds/js-mocking-fundamentals
+- https://github.com/kentcdodds/js-testing-fundamentals
+
+## Testing approach
 
 There are many ways to unit test, and I'm not suggesting what's "good" or "bad". This section just provides context as to why the solutions here may or may not look idiosyncratic.
 
