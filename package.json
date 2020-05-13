@@ -1,0 +1,12 @@
+{
+  "name": "jest-how-do-i-mock-x",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "react-scripts": "^3.4.1"
+  },
+  "scripts": {
+    "test": "react-scripts test"
+  }
+}
