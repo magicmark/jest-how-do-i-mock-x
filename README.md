@@ -1,7 +1,5 @@
 # Jest: How do I mock x?
 
-Jest is an excellent tool - but with its power comes some amount of complexity. Mocking values in Jest is one such example of complexity, subject to [many blog posts](https://www.google.com/search?q=jest+mock+site%3Amedium.com).
-
 This repo contains [minimal reproducable examples](https://stackoverflow.com/help/minimal-reproducible-example) of where I've been stuck in the past trying to work out how to mock something, and (maybe) the solution.
 
 The aim of this repo is to:
