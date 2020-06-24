@@ -24,3 +24,7 @@ function formatRecipe() {
 ## The challenge
 
 We want mock out the recipe `source` attribute _per test_.
+
+## Solution
+
+[See the tests](./__tests__/formatRecipe.test.js)

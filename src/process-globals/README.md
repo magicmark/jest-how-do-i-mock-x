@@ -27,6 +27,10 @@ $ node -p "Object.getOwnPropertyDescriptor(process, 'platform')"
 }
 ```
 
+## Solution
+
+[See the tests](./__tests__/get-platform.test.js)
+
 ## Discussion
 
 See: <https://github.com/facebook/jest/issues/2227>

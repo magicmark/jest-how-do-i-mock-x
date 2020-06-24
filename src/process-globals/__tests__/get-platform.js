@@ -19,7 +19,7 @@ describe('mocking a process global', () => {
             value: 'foo',
         });
 
-        expect(process.platform).toBe('foo');
+        expect(getPlatform()).toBe('foo');
     });
 
     it('prints a mock value 2', () => {
