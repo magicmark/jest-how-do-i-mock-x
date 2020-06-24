@@ -1,6 +1,6 @@
 # Mocking Example: A global `process` attribute
 
-In `get-platform` we have the following function:
+In `get-platform.js` we have the following function:
 
 ```js
 export default function getPlatform() {
