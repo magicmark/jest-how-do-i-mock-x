@@ -36,9 +36,9 @@ Here's a tl;dr of the solutions usually suggested:
 3) Refactoring into a class, or move `getPlanet` to a seperate file
 4) Use babel-plugin-rewire ([example](https://stackoverflow.com/a/52725067/4396258))
 
-This repo shows examples for the following approaches
+This repo shows examples for the following approaches:
 
 - [#1 (using exports.)](./__tests__/greeting.exports.test.js)
 - [#2 (dependency injection)](./__tests__/greeting.dependency-injection.test.js)
 
-All are valid approaches (my personal preference is for dependency injection)
+All are valid! (My personal preference is for dependency injection fwiw)
