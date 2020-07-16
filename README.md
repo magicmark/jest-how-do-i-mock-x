@@ -1,6 +1,6 @@
 # Jest: How do I mock x?
 
-This repo contains [minimal reproducable examples](https://stackoverflow.com/help/minimal-reproducible-example) of where I've been stuck in the past trying to work out how to mock something, and (maybe) the solution.
+This repo contains runnable [minimal reproducable examples](https://stackoverflow.com/help/minimal-reproducible-example) of where I've been stuck in the past trying to work out how to mock something, and (maybe) the solution.
 
 The aim of this repo is to:
 
