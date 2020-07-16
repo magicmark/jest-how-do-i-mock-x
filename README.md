@@ -8,7 +8,7 @@ The aim of this repo is to:
 -   help future me come back to a particular solution I came up with in the past
 -   maybe help others in similar situations :)
 
-Feel free to PR with any other non-trivial examples you've faced!
+Feel free to PR with any other jest testing puzzles you've faced!
 
 ## Scenarios
 
