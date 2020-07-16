@@ -12,6 +12,7 @@ Feel free to PR with any other non-trivial examples you've faced!
 
 ## Scenarios
 
+-   [Mocking a function in the same module](./src/function-in-same-module)
 -   [Mocking a string in an exported object](./src/string-in-exported-object)
 -   [Mocking node global values (e.g. `process.platform`)](./src/process-globals)
 
