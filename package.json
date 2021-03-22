@@ -10,7 +10,6 @@
     "test": "react-scripts test"
   },
   "devDependencies": {
-    "memfs": "^3.2.0",
-    "unionfs": "^4.4.0"
+    "memfs": "^3.2.0"
   }
 }
