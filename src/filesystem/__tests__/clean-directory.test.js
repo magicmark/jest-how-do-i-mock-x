@@ -11,8 +11,8 @@ test('cleanDirectory() wipes away contents of /foo/bar/baz with 2 files', () => 
 
     const numFilesDeleted = cleanDirectory();
 
-    expect(fs.readdirSync('/foo/bar/baz')).toHaveLength(0);
     expect(numFilesDeleted).toBe(2);
+    expect(fs.readdirSync('/foo/bar/baz')).toHaveLength(0);
 });
 
 test('cleanDirectory() wipes away contents of /foo/bar/baz with 3 files', () => {
@@ -24,6 +24,6 @@ test('cleanDirectory() wipes away contents of /foo/bar/baz with 3 files', () => 
 
     const numFilesDeleted = cleanDirectory();
 
-    expect(fs.readdirSync('/foo/bar/baz')).toHaveLength(0);
     expect(numFilesDeleted).toBe(3);
+    expect(fs.readdirSync('/foo/bar/baz')).toHaveLength(0);
 });
