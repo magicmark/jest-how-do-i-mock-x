@@ -15,6 +15,7 @@ Feel free to PR with any other jest testing puzzles you've faced!
 -   [Mocking a function in the same module](./src/function-in-same-module)
 -   [Mocking a string in an exported object](./src/string-in-exported-object)
 -   [Mocking node global values (e.g. `process.platform`)](./src/process-globals)
+-   [Mocking the filesystem (e.g. `fs.readdir`)](./src/filesystem)
 
 ## Running the tests
 
