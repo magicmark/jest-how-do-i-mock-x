@@ -7,7 +7,7 @@ export default function cleanDirectory() {
     const files = fs.readdirSync(DIR_TO_CLEAN).map((f) => path.join(DIR_TO_CLEAN, f));
 
     files.forEach((file) => {
-        fs.unlink(file);
+        fs.unlinkSync(file);
     });
 
     return files.length;
