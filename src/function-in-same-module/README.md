@@ -38,7 +38,7 @@ Here's a tl;dr of the solutions usually suggested:
 
 This repo shows examples for the following approaches:
 
-- [#1 (using exports.)](./__tests__/greeting.exports.test.js)
+- [#1 (using exports.)](./__tests__/greeting.exports.test.js) (probably avoid this imo)
 - [#2 (dependency injection)](./__tests__/greeting.dependency-injection.test.js)
 
-All are valid! (My personal preference is for dependency injection fwiw)
+My personal preference is for dependency injection. `exports.` seems hacky and ties you to implementation details about how your build handles and compiles ES6 imports/exports.
