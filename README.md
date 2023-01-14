@@ -16,6 +16,7 @@ Feel free to PR with any other jest testing puzzles you've faced!
 -   [Mocking a string in an exported object](./src/string-in-exported-object)
 -   [Mocking node global values (e.g. `process.platform`)](./src/process-globals)
 -   [Mocking the filesystem (e.g. `fs.readdir`)](./src/filesystem)
+-   [Mocking a stdlib module (e.g. `childProcess.execFile`) wihout \_\_mocks__](./src/stdlib-modules)
 
 ## Running the tests
 
