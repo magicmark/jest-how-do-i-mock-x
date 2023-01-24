@@ -1,10 +1,11 @@
 import cleanDirectory from '../clean-directory';
-import fs, { __setVolumeContents} from 'fs';
+import { vol } from 'memfs';
+import fs from 'fs';
 
-jest.mock('fs'); // check out ../__mocks__/fs.js to see why this works!
+jest.mock('fs', () => jest.requireActual('memfs').fs);
 
 test('cleanDirectory() wipes away contents of /foo/bar/baz with 2 files', () => {
-    __setVolumeContents({
+    vol.fromJSON({
         '/foo/bar/baz/qux1.txt': 'hello',
         '/foo/bar/baz/qux2.txt': 'world',
     });
@@ -16,7 +17,7 @@ test('cleanDirectory() wipes away contents of /foo/bar/baz with 2 files', () => 
 });
 
 test('cleanDirectory() wipes away contents of /foo/bar/baz with 3 files', () => {
-    __setVolumeContents({
+    vol.fromJSON({
         '/foo/bar/baz/one.txt': '1',
         '/foo/bar/baz/two.txt': '2',
         '/foo/bar/baz/three.txt': '3',
