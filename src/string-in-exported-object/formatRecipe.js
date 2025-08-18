@@ -2,7 +2,7 @@ import recipe from './beefStewRecipe';
 
 /**
  * Given a recipe, print a set of instructions.
- * 
+ *
  * We're going to test mocking out `recipe.source`, in the test file.
  */
 export default function formatRecipe() {

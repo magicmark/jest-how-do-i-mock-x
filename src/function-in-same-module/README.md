@@ -3,11 +3,11 @@
 In [`greeting.js`](./greeting.js) we have the following functions:
 
 ```js
-export function getPlanet () {
+export function getPlanet() {
     return 'world';
 }
 
-export default function getGreeting () {
+export default function getGreeting() {
     return `hello ${getPlanet()}!`;
 }
 ```
@@ -31,10 +31,10 @@ of stackoverflows/blogs etc discussing approaches to this issue (or similar):
 
 Here's a tl;dr of the solutions usually suggested:
 
-1) Use `exports.getPlanet()` instead of `getPlanet()`
-2) Use dependency injection
-3) Refactoring into a class, or move `getPlanet` to a seperate file
-4) Use babel-plugin-rewire ([example](https://stackoverflow.com/a/52725067/4396258))
+1. Use `exports.getPlanet()` instead of `getPlanet()`
+2. Use dependency injection
+3. Refactoring into a class, or move `getPlanet` to a seperate file
+4. Use babel-plugin-rewire ([example](https://stackoverflow.com/a/52725067/4396258))
 
 This repo shows examples for the following approaches:
 

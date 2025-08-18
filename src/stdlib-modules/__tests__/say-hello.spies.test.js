@@ -8,9 +8,7 @@ afterEach(() => {
 it('uses a mock value', () => {
     jest.spyOn(childProcess, 'execFileSync').mockReturnValue('bonjour mars');
     expect(sayHello()).toBe('bonjour mars');
-    expect(childProcess.execFileSync).toHaveBeenCalledWith(
-        "echo", ["hello", "world"], { "encoding": "utf8" }
-    );
+    expect(childProcess.execFileSync).toHaveBeenCalledWith('echo', ['hello', 'world'], { encoding: 'utf8' });
 });
 
 it('works when unmocked', () => {

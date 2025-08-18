@@ -1,7 +1,7 @@
-export function getPlanet () {
+export function getPlanet() {
     return 'world';
 }
 
-export default function getGreeting () {
+export default function getGreeting() {
     return `hello ${exports.getPlanet()}!`;
 }
