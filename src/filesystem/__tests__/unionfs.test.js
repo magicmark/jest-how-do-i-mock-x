@@ -1,10 +1,12 @@
-import { vol } from 'memfs';
+import { vol, createFsFromVolume } from 'memfs';
 import { ufs } from 'unionfs';
 import fs from 'fs';
 import path from 'path';
 
-jest.mock('fs', () => require('unionfs').ufs);
-jest.mock('fs/promises', () => require('unionfs').ufs.promises);
+jest.mock('fs', () => jest.requireActual('unionfs').ufs);
+jest.mock('fs/promises', () => jest.requireActual('unionfs').ufs.promises);
+jest.mock('node:fs', () => jest.requireActual('unionfs').ufs);
+jest.mock('node:fs/promises', () => jest.requireActual('unionfs').ufs.promises);
 
 const ROOT = path.join(__dirname, '..', '..', '..');
 
@@ -13,7 +15,7 @@ vol.fromJSON({
     '/foo/bar/baz.txt': 'hi from mocked fs',
 });
 
-ufs.use(jest.requireActual('fs')).use(vol);
+ufs.use(jest.requireActual('fs')).use(createFsFromVolume(vol));
 
 it('unionfs', async () => {
     // mocked files work
