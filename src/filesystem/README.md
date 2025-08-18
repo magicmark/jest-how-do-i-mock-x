@@ -20,7 +20,7 @@ We want mock out the contents of the filesystem _per test_.
 
 ## Solution
 
-[See the tests](./__tests__/clean-directory.test.js)
+[See the tests](./__tests__)
 
 ## Alternatives
 

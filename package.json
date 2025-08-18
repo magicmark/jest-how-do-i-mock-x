@@ -4,12 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "react-scripts": "^5.0.1"
+    "@babel/core": "^7.28.3",
+    "@babel/preset-env": "^7.28.3",
+    "babel-jest": "^30.0.5",
+    "jest": "^30.0.5",
+    "memfs": "^4.36.3",
+    "prettier": "^3.6.2",
+    "unionfs": "^4.6.0"
   },
   "scripts": {
-    "test": "react-scripts test"
-  },
-  "devDependencies": {
-    "memfs": "^3.4.13"
+    "test": "jest"
   }
 }
